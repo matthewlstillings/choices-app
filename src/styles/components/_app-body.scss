@@ -1,0 +1,29 @@
+//App Header 
+.app-header{
+    background: $secondary;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: $medium-size;
+}
+
+.app-header__title {
+    margin: 0;
+}
+
+//App
+.app-body {
+    background: #A3BAC3;
+    margin-bottom: $xl-size;
+}
+
+.default-message {
+    color: $white;
+    font-size: $large-size - 1;
+    padding: $large-size;
+    margin: 0;
+    text-align: center;
+    @media (min-width: $desktop-breakpoint) {
+
+    }
+}

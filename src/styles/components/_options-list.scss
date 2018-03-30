@@ -1,0 +1,16 @@
+.choices-list {
+    list-style: none;
+    color: $white;
+    font-size: $large-size - 1;
+    margin: 0px;
+}
+
+.choice {
+    border-top: 2px solid darken(#A3BAC3, 10%);
+    display: flex;
+    justify-content: space-between;
+    margin-left: -40px; 
+    padding: $medium-size;
+    word-break: break-all;
+}
+

@@ -1,0 +1,73 @@
+.big-button {
+    background: $bright-blue;
+    border: none;
+    border-bottom: .5rem solid darken($bright-blue, 10%);
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: bold;
+    font-size: $large-size;
+    margin-bottom: $medium-size;
+    outline: none;
+    padding: 1.2rem;
+    width: 100%;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: $medium-size;
+    }
+}
+
+.big-button:disabled {
+    opacity: .5;
+}
+
+.button {
+    background: $bright-blue;
+    border: none;
+    border-bottom: .3rem solid darken($bright-blue, 10%);
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 500;
+    padding: $s-size;
+    outline: none;
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+}
+
+.button--link:hover {
+    color: $bright-blue;
+}
+
+.button--add {
+    border-bottom: none;
+    margin: 0;
+    padding: $medium-size;
+    flex-grow: 1;
+    @media (min-width: $desktop-breakpoint) {
+        flex-grow: 0;
+        width: 15%;
+    }
+}
+
+
+
+.button--modal:active {
+    @include button-click;
+    border: none;
+}
+
+.big-button:active {
+    @include button-click;
+    border: none;
+    margin-bottom: $medium-size + .5rem;
+    @media (min-width: $desktop-breakpoint) {
+        margin-bottom: $xl-size + .5rem;  
+    }
+}
+
+.button--add:active {
+    @include button-click;
+}

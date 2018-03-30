@@ -1,0 +1,22 @@
+// Colors
+$background: #EAEBED;
+$primary: #006989;
+$secondary: #00485C;   
+$bright-blue: #01A7C2;
+$chalkboard: #2F2D2E;
+$white: #EAEBED;
+
+//Spacing 
+$s-size: 1.2rem;
+$medium-size: 1.6rem;
+$large-size: 3.2rem;
+$xl-size: 4.8rem;
+
+//Breakpoints 
+$desktop-breakpoint: 45rem;
+
+//Mixins
+@mixin button-click {
+    background: darken($bright-blue, 10%);
+    box-shadow: inset 0px 0px 1px 1px black;
+}

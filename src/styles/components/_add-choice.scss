@@ -1,0 +1,33 @@
+.add-choice-form {
+    display: flex;
+    flex-direction: column;
+    .button {
+        flex-grow: 1;
+    }
+}
+
+.add-choice-input {
+    border: none;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: $medium-size;
+    outline: none;
+    padding: $medium-size;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.error-message {
+    border-top: 2px solid darken(#A3BAC3, 10%);
+    display: flex;
+    color: red;
+    font-size: $large-size - 1;
+    justify-content: space-between;
+    margin: 0;
+    padding: $medium-size;
+}
+
+@media (min-width: $desktop-breakpoint) {
+   .add-choice-form {
+       flex-direction: row;
+   } 
+}
